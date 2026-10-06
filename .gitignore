@@ -1,0 +1,14 @@
+# OSM map data
+osm-data/*.osm.pbf
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Next.js
+frontend/node_modules/
+frontend/.next/
