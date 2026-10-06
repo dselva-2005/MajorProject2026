@@ -1,14 +1,45 @@
-# OSM map data
-osm-data/*.osm.pbf
-
 # Python
-backend/.venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
 
-# Environment variables
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Django
+*.sqlite3
+*.log
+
+# Environment / secrets
 .env
+.env.*
+!.env.example
 
-# Next.js
-frontend/node_modules/
-frontend/.next/
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# OSM / large map data
+osm-data/*.osm.pbf
+osm2pgsql/test/*.osm.pbf
+
+# Valhalla generated data
+valhalla/*.osm.pbf
+valhalla/*.sqlite
+valhalla/tiles/
+valhalla/*.tar
+
+# Generated / temporary files
+*.tmp
+*.temp
